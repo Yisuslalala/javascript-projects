@@ -1,38 +1,65 @@
 body {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/310px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg");
-    background-color: darkslategray;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/1920px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg");
+    background-size: cover;
+    background-color: #333; /* Dark background color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    margin: 0 0 20px;
-    padding: 0 0 20px;
-    border-bottom: solid 1px #ddd;
+h1 {
+    color: #3110ec; /* White text color */
+    margin-top: 20px;
     font-family: 'Courier New', Courier, monospace;
-    font-size: calc(.8em + 1.5vw);
+    font-size: 2em;
+    text-align: center;
 }
 
 #container {
-    border: 1.5px solid;
-    border-color: aquamarine;
+    border: 1.5px solid aquamarine;
     width: 50%;
     margin: auto;
-    padding: 80px;
+    padding: 30px;
     box-sizing: border-box;
     text-align: center;
-    margin-top: 100px;
-    box-shadow: 0 10px 15px -8px #000;
-    background-color: bisque;
+    margin-top: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Slightly improved box shadow */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin: 10px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
 }
 
-#serviceQuality {
-    margin: auto;
+input[type="text"],
+select {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #223dc947;
+    border-radius: 5px;
+    font-size: 1.1em;
 }
 
 #calculateTip {
-    
+    background-color: #007BFF; /* Blue button color */
+    color: #e2e9ea; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
 }
 
+#calculateTip:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
